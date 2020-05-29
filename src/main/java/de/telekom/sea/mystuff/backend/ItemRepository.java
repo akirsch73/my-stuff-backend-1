@@ -8,7 +8,7 @@ import de.telekom.sea.mystuff.backend.Item;
 
 public interface ItemRepository extends JpaRepository<Item, Long> {
 
-	Optional<Item> findById(Long id);
+//	Optional<Item> findById(Long id);
 /**
  * Was macht ein Respository überhaupt?
  * Wieso habe ich im Repository ein Interface?

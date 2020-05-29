@@ -19,9 +19,9 @@ public class DevBootstrap implements ApplicationListener<ContextRefreshedEvent> 
     }
 
     private void initData() {
-        item = new Item((long) 1, "Hund", 3, "Keller", "Kuscheltier", Date.valueOf("2019-11-12"));
-        item2 = new Item((long) 2, "Katze", 3, "Zwinger", "Kuscheltier", Date.valueOf("2017-11-12"));
-        item3 = new Item((long) 3, "Maus", 3, "Dachboden", "Kuscheltier", Date.valueOf("2015-11-12"));
+        item = new Item("Hund", 3, "Keller", "Kuscheltier", Date.valueOf("2019-11-12"));
+        item2 = new Item("Katze", 3, "Zwinger", "Kuscheltier", Date.valueOf("2017-11-12"));
+        item3 = new Item("Maus", 3, "Dachboden", "Kuscheltier", Date.valueOf("2015-11-12"));
   
 
         List<Item> newItems = Arrays.asList(item, item2, item3);

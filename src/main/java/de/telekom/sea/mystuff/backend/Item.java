@@ -11,6 +11,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -25,6 +26,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
+
 public class Item {
 
 	@Id
@@ -36,9 +38,10 @@ public class Item {
 	private String description;
 	private Date date;
 
-	public Item(Long id, String name, int amount, String location, String description, Date date) {
+	@Builder
+	public Item(String name, int amount, String location, String description, Date date) {
 		super();
-		this.id = id;
+//		this.id = id;
 		this.name = name;
 		this.amount = amount;
 		this.location = location;
